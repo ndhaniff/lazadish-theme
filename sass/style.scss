@@ -1,0 +1,309 @@
+@import 'variables';
+@import 'layout';
+@import 'woocommerce';
+@import 'table';
+
+/**
+ * NAVIGATION
+ */
+
+ul.dropdown-menu.show{
+	width:100px !important;
+	a{
+		color:$jetblack;
+		&:hover{
+			color:#fff;
+			background:$yellow;
+		}
+	}
+	&:hover,li:hover{
+		background:$yellow;
+	}
+}
+
+nav.top-nav{
+	padding:0;
+	background: darken($red,5);
+	li{
+		padding:0;
+		padding-right:.5rem;
+	}
+	li a{
+		font-size:.7rem;
+		color:#d3d3d3;
+		&:hover{
+			color:#fff;
+		}
+	}
+}
+
+nav.navbar.main-nav{
+	@include cardshadow();	
+	.container{
+		border-bottom: .1px solid $lred;
+		padding-bottom:1rem;
+		margin-bottom:1rem;
+	}
+	li{
+		padding-left:1rem;
+	}
+	li a {
+		color:#ddd;
+		font-weight: bold;
+		letter-spacing: .05rem;
+		font-size:1.1rem;
+		font-style:italic;
+		position:relative;
+		-webkit-transition: all 1s linear;
+		transition: all 1s linear;
+		&:hover:before{
+		  content : "";
+		  position: absolute;
+		  left    : 0;
+		  bottom  : 0;
+		  margin: auto;
+		  height  : 1px;
+		  width   : 100%;  /* or 100px */
+		  border-bottom:2px solid $yellow;
+		}
+		&:hover:after{
+		  content : "";
+		  position: absolute;
+		  right    : 25%;
+		  top  : 0;
+		  margin: auto;
+		  height  : 1px;
+		  width   : 50%;  /* or 100px */
+		  border-top:2px solid $yellow;
+		}		
+	}
+}
+
+/**
+ * HOMEPAGE
+ */
+.header-img {
+	height:35rem;
+	background: url('../images/slight.jpg');
+	background-size:cover;
+	background-position:center center;
+	background-attachment:fixed;
+	.hero-title h2 {
+		@include funkyfont();
+		font-size:3.5rem;
+		color:#fff;
+		line-height:6rem;
+		span.ht-center{
+			@include funkyfont();
+			font-size:6.5rem;
+			color:#fff;
+			border-bottom:solid 3px $yellow;
+		}
+		span{
+			@include funkyfont();
+		}
+	}
+	#usergeolocate{
+		font-size:2rem;
+	}
+	span{
+		color:$yellow;
+	}
+}
+
+.section-content{
+	padding-bottom: 0 !important;
+	h3{
+		font-size:2rem;
+		position:relative;
+		padding-bottom:1rem;
+		border-bottom:solid .1px $gray;
+		color:$jetblack;
+		&:before{
+			@include bborder($red,20%,40%);
+		}
+	}
+}
+
+#register{
+	background:$red;
+	border:none;
+	border-radius:25px;
+	color:#fff;
+	padding:.5rem;
+	cursor:pointer;
+}
+
+#wppb-register-user-chef-registration{
+	label{
+		color:$silver;
+	}
+}
+
+.dashboard-nav-pane{
+	border: solid .3rem $gray;
+	border-bottom: solid .3rem transparent;
+}
+
+.dashboard-nav{	
+	margin-top:1.2rem;
+	a{
+		color:$silver;
+		font-size:1.2rem;
+		&:hover{
+			color:lighten($silver,10);
+		}
+	}
+	.nav-link.active{
+			color:#fff;
+			background:$red;
+		}
+}
+
+.product-tabs{
+	.nav-item{
+		a{
+		color:$silver;
+		}
+	}
+	.nav-link.active{
+			color:$red;
+		}
+	
+}
+
+#submitted_post_title {
+    width: 100%;
+    border-radius: 25px;
+    border: solid .05rem #d3d3d3;
+    margin-top: .5rem;
+    text-indent: .5rem;
+    color: #747474;
+}
+
+#_ld_category {
+    height: 2rem;
+    text-indent: .5rem;
+}
+
+#submitted_post_thumbnail {
+    font-size: 1rem;
+    color: #747474;
+    cursor: pointer;
+}
+
+input[name="submit-cmb"]{
+    width:30%;
+    font-size:1.2rem;
+    background:#C00A27;
+    border-radius:25px;
+    border:none;
+    color:#ddd;
+    height:2rem;
+    cursor:pointer;
+}
+
+.your-product {
+    padding: 1rem;
+    border-bottom: solid 1px #d3d3d3;
+}
+
+.your-product img {
+    border: solid .3rem #8ca93e;
+}
+
+.your-product h2 {
+    font-size: 1.8rem;
+}
+
+.your-product a {
+    padding: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 25px;
+    color: #fff;
+    background: #C00A27;
+}
+.your-prod-link{
+	color: $matte !important;
+	padding:0 !important;
+	background:none !important;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.your-product a:hover {
+    text-decoration: none;
+    background: #C00A37;
+}
+
+.your-product p {
+    color: #747474;
+}
+
+#orders h3{
+    border:none;
+}
+
+.orderlist{
+    padding:1rem;
+    border-radius:25px;
+    border:solid .5px #d3d3d3;    
+}
+
+.orderlist strong,.orderlist {
+    color:#414141;
+}
+
+.order-processing{
+    color: #fff;
+    background: #F8AA3E;
+    border-radius: 25px;
+    padding-left: 2rem  !important;
+}
+
+.order-completed{
+    margin-top:2rem !important;
+    color: #fff;
+    background: #8ca93e;
+    border-radius: 25px;
+    padding-left: 2rem  !important;
+}
+
+.post-list{
+	margin-bottom:2rem;
+	border-bottom: solid 1px $gray;
+}
+
+.load-more{
+	color:$silver;
+	&:hover{
+		color:$silver;
+	}
+}
+
+@import 'responsive';
+
+.product-template-default a{
+	color:$yellow;
+	&:hover{
+		text-decoration: none;
+		color:$red;
+	}
+}
+
+.tab-link{
+	color:$matte !important;
+}
+
+.tab-link.nav-link.active{
+		color:$red !important;
+	}
+
+#restaurantmap{
+	width:100%;
+	height:50vh;
+	border: solid .3rem $gray;
+	margin:auto;
+}

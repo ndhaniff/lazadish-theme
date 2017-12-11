@@ -1,0 +1,30 @@
+table.orders{
+	border-collapse:collapse !important;
+	border:solid 1px $jetblack;
+	width:100%;
+
+	tr,td,th{
+	border:solid 1px #d3d3d3 !important;
+}
+
+thead{
+	background:lighten($red,20);
+	color:#fff;
+}
+
+tbody{
+	td{
+		padding:.3rem;
+	}
+	td:nth-child(1){
+		width:70%;
+	}
+	td:nth-child(2),td:nth-child(3){
+		text-align:center !important;
+	}
+}
+}
+
+.orderlist{
+	padding-bottom:1rem;
+}

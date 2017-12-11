@@ -1,0 +1,342 @@
+/**
+ * RESPONSIVE
+ */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+}
+
+@media all and (max-width: 768px) {
+	#menu-top-menu	{
+		flex-direction: row; 
+		li{
+			display:inline-block;
+		}
+	}
+
+	.header-img{
+
+	}
+	.ht-center{
+		font-size:4rem !important;
+	}
+	.cat-list{
+		li{
+			width:32.5%;
+			a{
+				
+				i{
+				font-size:3rem !important;
+			}
+			h5{
+				font-size:1rem !important;
+			}
+			}
+		}
+	}
+
+	.section-title,.section-content{
+		h3{
+			font-size:1.5rem !important;
+		}
+	}
+
+	.list-restaurant{
+		margin:auto;
+		li{
+			width:50%;
+		}
+	}
+
+	.howitwork {
+		width:50%;
+	}
+	.how-it{
+		padding-top:5vh !important;
+	}
+}
+@media all and (max-width: 1024px){
+	html{
+		font-size:14.5px;
+	}
+	.product-rest-li img{
+		width:150px;
+		height:150px;
+	}
+}
+
+@media all and (max-width: 768px){
+	html{
+		font-size:13px;
+	}
+
+	li.wpmenucartli.wpmenucart-display-right.menu-item.nav-item{
+		margin-left:5vh;
+	}
+
+	.list-restaurant img{
+		width:120px;
+		height:120px;
+	}
+
+	.navbar-brand img{
+		width:150px;
+		height:60px;
+	}
+
+	.shop-sidebar,.sidebar-content{
+		text-align:center;
+		li::before{
+			display:none;
+		}
+	}
+	.product-li,.product-rest-li{
+		width:50%;
+	}
+
+	.post-content img{
+		height:300px;
+	}
+	.your-product{
+		margin: auto;
+		text-align:center;
+	}
+	#addproduct{
+		padding-left:0 !important;
+	}
+	input[name="submit-cmb"]{
+		width:100%;
+	}
+	.cmb2-metabox-description{
+		display:inline-block;
+	}
+	.order-processing{
+		margin-top:1rem !important;
+	}
+	.dashboard-container{
+		margin: 0 !important; 
+	}
+	.rest-banner img{
+		height:350px;
+		object-fit: cover;
+	}
+	.rest-inside img{
+		width:150px;
+		height:150px;
+	}
+
+	.product-rest-li img{
+		width:125px;
+		height:125px;
+	}
+}
+
+@media all and (max-width: 414px){
+	html{
+		font-size:12px;
+	}
+	.wpmenucartli{
+		display:none;
+	}
+
+	.list-restaurant img{
+		width:100px;
+		height:100px;
+	}
+
+	.navbar-brand img{
+		width:150px;
+		height:60px;
+	}
+
+	.shop-sidebar,.sidebar-content{
+		text-align:center;
+		li::before{
+			display:none;
+		}
+	}
+	.product-li,.product-rest-li{
+		width:50%;
+	}
+
+	.post-content img{
+		height:300px;
+	}
+	.your-product{
+		margin: auto;
+		text-align:center;
+	}
+	#addproduct{
+		padding-left:0 !important;
+	}
+	input[name="submit-cmb"]{
+		width:100%;
+	}
+	.cmb2-metabox-description{
+		display:inline-block;
+	}
+	.order-processing{
+		margin-top:1rem !important;
+	}
+	.dashboard-container{
+		margin: 0 !important; 
+	}
+	.rest-banner img{
+		height:350px;
+		object-fit: cover;
+	}
+	.rest-inside img{
+		width:150px;
+		height:150px;
+	}
+
+	.product-rest-li img{
+		width:100px;
+		height:100px;
+	}
+}
+
+@media all and (max-width: 375px){
+	html{
+		font-size:11px;
+	}
+
+	.wpmenucartli{
+		display:none;
+	}
+	.list-restaurant img{
+		width:100px;
+		height:100px;
+	}
+
+	.navbar-brand img{
+		width:150px;
+		height:60px;
+	}
+	.shop-sidebar,.sidebar-content{
+		text-align:center;
+		li::before{
+			display:none;
+		}
+	}
+	.product-li,.product-rest-li{
+		width:50%;
+	}
+
+	.post-content img{
+		height:300px;
+	}
+	.your-product{
+		margin: auto;
+		text-align:center;
+	}
+	#addproduct{
+		padding-left:0 !important;
+	}
+	input[name="submit-cmb"]{
+		width:100%;
+	}
+	.cmb2-metabox-description{
+		display:inline-block;
+	}
+	.order-processing{
+		margin-top:1rem !important;
+	}
+	.dashboard-container{
+		margin: 0 !important; 
+	}
+	.rest-banner img{
+		height:350px;
+		object-fit: cover;
+	}
+	.rest-inside img{
+		width:150px;
+		height:150px;
+	}
+
+	.product-rest-li img{
+		width:100px;
+		height:100px;
+	}
+}
+
+@media all and (max-width: 360px){
+	html{
+		font-size:13px;
+	}
+	.hero-title{
+		h2{
+			line-height: 4.5rem !important;
+		}
+	}
+	.list-restaurant img{
+		width:100px;
+		height:100px;
+	}
+	.wpmenucartli{
+		display:none;
+	}
+	#menu-menu-1{
+		text-align:center;
+	}
+	#menu-top-menu{
+		margin: 0 auto;
+	}
+	.dropdown-menu{
+		position:absolute !important; 
+	}
+
+	.navbar-brand img{
+		width:150px;
+		height:60px;
+	}
+	.shop-sidebar,.sidebar-content{
+		text-align:center;
+		li::before{
+			display:none;
+		}
+	}
+	.product-li,.product-rest-li{
+		width:50%;
+	}
+
+	.post-content img{
+		height:300px;
+	}
+	.your-product{
+		margin: auto;
+		text-align:center;
+	}
+	#addproduct{
+		padding-left:0 !important;
+	}
+	input[name="submit-cmb"]{
+		width:100%;
+	}
+	.cmb2-metabox-description{
+		display:inline-block;
+	}
+	.order-processing{
+		margin-top:1rem !important;
+	}
+	.dashboard-container{
+		margin: 0 !important; 
+	}
+	.rest-banner img{
+		height:350px;
+		object-fit: cover;
+	}
+	.rest-inside img{
+		width:150px;
+		height:150px;
+	}
+
+	.product-rest-li img{
+		width:100px;
+		height:100px;
+	}
+
+	#usergeolocate{
+		font-size:1.4rem !important;
+	}
+}

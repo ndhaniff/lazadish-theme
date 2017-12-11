@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'lazadish';
+  src:  url('../fonts/lazadish.eot?tt5gr8');
+  src:  url('../fonts/lazadish.eot?tt5gr8#iefix') format('embedded-opentype'),
+    url('../fonts/lazadish.ttf?tt5gr8') format('truetype'),
+    url('../fonts/lazadish.woff?tt5gr8') format('woff'),
+    url('../fonts/lazadish.svg?tt5gr8#lazadish') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.lazadish {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'lazadish' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ldish-groceries:before {
+  content: "\e900";
+}
+.ldish-salver:before {
+  content: "\1f317";
+}
+.ldish-bell-covering-hot-dish:before {
+  content: "\e902";
+}
+.ldish-dried-fruit:before {
+  content: "\e903";
+}
+.ldish-meat:before {
+  content: "\e904";
+}
+.ldish-cupcake:before {
+  content: "\e905";
+}

@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed');
+@font-face {
+    font-family: DK Honeyguide Caps;
+    src: url("../fonts/DKHoneyguideCaps-Regular.woff");
+    }
+
+html {
+    font-size: 16px;
+    min-height: 100vh !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body{
+     font-family: 'Lato', sans-serif;
+     position:relative;
+     min-height: 100vh !important;
+}
+.bg-matte{
+    background:#2c2c2c;
+}
+
+.bg-red{
+    background:$red;
+}
+.text-red{
+    color:$red;
+}
+.bg-yellow{
+    background:$yellow;
+}
+.text-yellow{
+    color:$yellow;
+}
+.bg-silver{
+    background:$silver;
+}
+.text-silver{
+    color:$silver;
+}
+.bg-green{
+    background:$green;
+}
+.text-green{
+    color:$green;
+}
+.text-white{
+    color:#fff;
+}
+.b-radius{
+    border-radius:25px;
+}
+
+@-webkit-keyframes spin {
+    from {-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+    to {-webkit-transform:rotate(360deg);transform:rotate(360deg);}
+}
+@keyframes spin {
+    from {-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+    to {-webkit-transform:rotate(360deg);transform:rotate(360deg);}
+}
+.show{
+    display:block;
+}
+
+/**
+ * POST INDEX
+ */
+.post-content{
+    h1{
+        font-size:2rem;
+        color:$jetblack;
+    }
+    color:$silver;
+    a{
+        color:$silver;
+    }
+    .btn-secondary{
+        background:$silver;
+        a{
+            color:#fff;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.sidebar-content{
+    .searchform{
+        input#s{
+            border-radius:25px;
+            border:solid .5px $gray;
+        }
+        input#searchsubmit{
+            background:none;
+            border:solid .5px $gray;
+            color:$silver;
+            font-size:1rem;
+            border-radius:25px;
+            padding-left:.5rem;
+            padding-right:.5rem;
+            &:hover{
+                cursor:pointer;
+                background:$silver;
+                color:#fff;
+                border:solid .5px $silver;
+            }
+        }
+    }
+
+    h4{
+        margin-top:3.5rem !important;
+    }
+    ul{
+        list-style: none;
+        padding-left:1rem;
+        li.cat-item{
+            padding:.5rem;
+            border-bottom:.01rem solid $gray;
+            &:before
+            {
+                content: '\25b6';
+                margin: 0 1em; 
+                color:$silver;
+            }
+            a{
+                color:$matte;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+        a{
+            color:$matte;
+        &:hover{
+                text-decoration: none;
+            }
+        }
+        .rpwwt-post-excerpt{
+            font-style:italic;
+            color:$silver;
+        }
+    }
+    .rpwwt-widget{
+        ul{
+            padding-left:1rem;
+        }
+    }
+}
+
+/**
+ * SINGLE POST
+ */
+.single-content{
+    padding-bottom: 2rem;
+    border-bottom:.5px solid $gray;
+}
+
+#respond,#comments{
+    margin-top:2rem;
+
+}
+.commentlist{
+    li{
+        margin-top:2rem;
+        list-style:none;
+    }
+}
+
+.comment-form{
+    textarea{
+        display: block;
+        width: 100%;
+        border-radius:25px;
+        text-indent: 1rem;
+        padding:.5rem;
+        &:focus{
+            outline:0;
+        }
+    }
+}
+
+
+.breadcrumb{
+    background:none;
+    border-radius:0;
+    border-bottom: .1px solid $gray;
+    a{
+        color:$silver;
+        &:hover{
+                text-decoration: none;
+            }
+    }
+}
+
+/**
+ * PLUGIN CSS
+ * woocommerce menu cart
+ */
+
+li.wpmenucartli.wpmenucart-display-right.menu-item.nav-item {
+    margin-left: 15rem;
+    background:$green;
+    padding-left:.3rem;
+    padding-right:.3rem;
+    border-radius:25px;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
+    &:hover{
+        background:$yellow;
+        -webkit-transition: all 1s linear;
+        transition: all 1s linear;
+    }
+}
+
+.wpmenucartli a {
+    padding: .5rem;
+    font-size:1rem !important;
+}
+
+.wpmenucartli a span {
+    padding-top: .5rem;
+    color: #fff;
+}
+
+.wpmenucartli a i {
+    color: #fff;
+}
+
+.wpmenucartli a:hover {
+    text-decoration: none;
+}
+
+.wpmenucartli a:hover:after,.wpmenucartli a:hover:before{
+    border:none !important;
+}
+
+#scanlocation{
+    padding:0;
+}
+// HOMEPAGE
+.list-restaurant{
+    li{
+        margin-top:1.5rem;
+        padding:1.5rem;
+        list-style:none;
+        border:solid .3rem transparent;
+        &:hover{
+            border:solid .3rem $gray;
+        }
+        a{
+            color:$matte;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.cat-list{
+    padding:1rem;
+    li{
+        padding:1rem;
+        list-style:none;
+        a{
+            transition: all .5s linear;
+            color:$silver;
+            &:hover{
+                text-decoration: none;
+                i,h5{
+                    color:$red;
+                }
+            }
+        }
+        i{
+            color:$silver
+        }
+    }
+}
+
+/**
+ * FOOTER
+ */
+.socialicon{
+    a:hover{
+        color:lighten($silver,10);
+    }
+}
+.rest-row{
+        position:relative;
+}
+.rest-banner{
+    .rest-inside{
+        padding-top:5rem;
+        position:absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom:0;
+        margin: auto;
+    }
+    img.rest-logo{
+        background:$green;
+        border:solid .3rem $yellow;
+        border-radius: 50%;
+    }
+}
